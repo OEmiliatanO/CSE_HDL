@@ -7,3 +7,11 @@ nWaveLog/
 simv
 simv.daidir/
 *.key
+*.ddc
+*.mr
+*.sdc
+*.sdf
+*.pvl
+*.syn
+cksum_dir/
+*.svf
