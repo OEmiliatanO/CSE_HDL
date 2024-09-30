@@ -1,0 +1,425 @@
+/////////////////////////////////////////////////////////////
+// Created by: Synopsys DC Expert(TM) in wire load mode
+// Version   : V-2023.12
+// Date      : Mon Sep 30 18:58:34 2024
+/////////////////////////////////////////////////////////////
+
+
+module FA_0 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n1;
+
+  AO22D1BWP16P90LVT U1 ( .A1(b), .A2(a), .B1(n1), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U2 ( .A1(a), .A2(b), .Z(n1) );
+  XOR2D1BWP16P90LVT U3 ( .A1(c_in), .A2(n1), .Z(sum) );
+endmodule
+
+
+module FA_1 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_2 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_3 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_4 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_5 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_6 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_7 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_8 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_9 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_10 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_11 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_12 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_13 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_14 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_15 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_16 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_17 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_18 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_19 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_20 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_21 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_22 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_23 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_24 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_25 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_26 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_27 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_28 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_29 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_30 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module FA_31 ( sum, c_out, a, b, c_in );
+  input a, b, c_in;
+  output sum, c_out;
+  wire   n2;
+
+  XOR2D1BWP16P90 U1 ( .A1(c_in), .A2(n2), .Z(sum) );
+  AO22D1BWP16P90LVT U2 ( .A1(b), .A2(a), .B1(n2), .B2(c_in), .Z(c_out) );
+  XOR2D1BWP16P90LVT U3 ( .A1(a), .A2(b), .Z(n2) );
+endmodule
+
+
+module adder_structure ( s, co, a, b, ci );
+  output [31:0] s;
+  input [31:0] a;
+  input [31:0] b;
+  input ci;
+  output co;
+
+  wire   [30:0] co_;
+
+  FA_0 fa0 ( .sum(s[0]), .c_out(co_[0]), .a(a[0]), .b(b[0]), .c_in(ci) );
+  FA_31 generate_FAs_1__fa ( .sum(s[1]), .c_out(co_[1]), .a(a[1]), .b(b[1]), 
+        .c_in(co_[0]) );
+  FA_30 generate_FAs_2__fa ( .sum(s[2]), .c_out(co_[2]), .a(a[2]), .b(b[2]), 
+        .c_in(co_[1]) );
+  FA_29 generate_FAs_3__fa ( .sum(s[3]), .c_out(co_[3]), .a(a[3]), .b(b[3]), 
+        .c_in(co_[2]) );
+  FA_28 generate_FAs_4__fa ( .sum(s[4]), .c_out(co_[4]), .a(a[4]), .b(b[4]), 
+        .c_in(co_[3]) );
+  FA_27 generate_FAs_5__fa ( .sum(s[5]), .c_out(co_[5]), .a(a[5]), .b(b[5]), 
+        .c_in(co_[4]) );
+  FA_26 generate_FAs_6__fa ( .sum(s[6]), .c_out(co_[6]), .a(a[6]), .b(b[6]), 
+        .c_in(co_[5]) );
+  FA_25 generate_FAs_7__fa ( .sum(s[7]), .c_out(co_[7]), .a(a[7]), .b(b[7]), 
+        .c_in(co_[6]) );
+  FA_24 generate_FAs_8__fa ( .sum(s[8]), .c_out(co_[8]), .a(a[8]), .b(b[8]), 
+        .c_in(co_[7]) );
+  FA_23 generate_FAs_9__fa ( .sum(s[9]), .c_out(co_[9]), .a(a[9]), .b(b[9]), 
+        .c_in(co_[8]) );
+  FA_22 generate_FAs_10__fa ( .sum(s[10]), .c_out(co_[10]), .a(a[10]), .b(
+        b[10]), .c_in(co_[9]) );
+  FA_21 generate_FAs_11__fa ( .sum(s[11]), .c_out(co_[11]), .a(a[11]), .b(
+        b[11]), .c_in(co_[10]) );
+  FA_20 generate_FAs_12__fa ( .sum(s[12]), .c_out(co_[12]), .a(a[12]), .b(
+        b[12]), .c_in(co_[11]) );
+  FA_19 generate_FAs_13__fa ( .sum(s[13]), .c_out(co_[13]), .a(a[13]), .b(
+        b[13]), .c_in(co_[12]) );
+  FA_18 generate_FAs_14__fa ( .sum(s[14]), .c_out(co_[14]), .a(a[14]), .b(
+        b[14]), .c_in(co_[13]) );
+  FA_17 generate_FAs_15__fa ( .sum(s[15]), .c_out(co_[15]), .a(a[15]), .b(
+        b[15]), .c_in(co_[14]) );
+  FA_16 generate_FAs_16__fa ( .sum(s[16]), .c_out(co_[16]), .a(a[16]), .b(
+        b[16]), .c_in(co_[15]) );
+  FA_15 generate_FAs_17__fa ( .sum(s[17]), .c_out(co_[17]), .a(a[17]), .b(
+        b[17]), .c_in(co_[16]) );
+  FA_14 generate_FAs_18__fa ( .sum(s[18]), .c_out(co_[18]), .a(a[18]), .b(
+        b[18]), .c_in(co_[17]) );
+  FA_13 generate_FAs_19__fa ( .sum(s[19]), .c_out(co_[19]), .a(a[19]), .b(
+        b[19]), .c_in(co_[18]) );
+  FA_12 generate_FAs_20__fa ( .sum(s[20]), .c_out(co_[20]), .a(a[20]), .b(
+        b[20]), .c_in(co_[19]) );
+  FA_11 generate_FAs_21__fa ( .sum(s[21]), .c_out(co_[21]), .a(a[21]), .b(
+        b[21]), .c_in(co_[20]) );
+  FA_10 generate_FAs_22__fa ( .sum(s[22]), .c_out(co_[22]), .a(a[22]), .b(
+        b[22]), .c_in(co_[21]) );
+  FA_9 generate_FAs_23__fa ( .sum(s[23]), .c_out(co_[23]), .a(a[23]), .b(b[23]), .c_in(co_[22]) );
+  FA_8 generate_FAs_24__fa ( .sum(s[24]), .c_out(co_[24]), .a(a[24]), .b(b[24]), .c_in(co_[23]) );
+  FA_7 generate_FAs_25__fa ( .sum(s[25]), .c_out(co_[25]), .a(a[25]), .b(b[25]), .c_in(co_[24]) );
+  FA_6 generate_FAs_26__fa ( .sum(s[26]), .c_out(co_[26]), .a(a[26]), .b(b[26]), .c_in(co_[25]) );
+  FA_5 generate_FAs_27__fa ( .sum(s[27]), .c_out(co_[27]), .a(a[27]), .b(b[27]), .c_in(co_[26]) );
+  FA_4 generate_FAs_28__fa ( .sum(s[28]), .c_out(co_[28]), .a(a[28]), .b(b[28]), .c_in(co_[27]) );
+  FA_3 generate_FAs_29__fa ( .sum(s[29]), .c_out(co_[29]), .a(a[29]), .b(b[29]), .c_in(co_[28]) );
+  FA_2 generate_FAs_30__fa ( .sum(s[30]), .c_out(co_[30]), .a(a[30]), .b(b[30]), .c_in(co_[29]) );
+  FA_1 generate_FAs_31__fa ( .sum(s[31]), .c_out(co), .a(a[31]), .b(b[31]), 
+        .c_in(co_[30]) );
+endmodule
+

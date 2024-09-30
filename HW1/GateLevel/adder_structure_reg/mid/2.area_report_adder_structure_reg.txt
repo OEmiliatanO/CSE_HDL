@@ -1,0 +1,76 @@
+ 
+****************************************
+Report : area
+Design : adder_structure_reg
+Version: V-2023.12
+Date   : Mon Sep 30 19:13:44 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                          166
+Number of nets:                           199
+Number of cells:                           99
+Number of combinational cells:             33
+Number of sequential cells:                33
+Number of macros/black boxes:               0
+Number of buf/inv:                         33
+Number of references:                      34
+
+Combinational area:                  6.842880
+Buf/Inv area:                        6.842880
+Noncombinational area:              30.792960
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                    37.635840
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+adder_structure_reg                 37.6358    100.0    6.8429     0.0000  0.0000  adder_structure_reg
+c_result                             0.9331      2.5    0.0000     0.9331  0.0000  D_FF_1
+generate_adder_regs_0__adder_reg     0.9331      2.5    0.0000     0.9331  0.0000  D_FF_0
+generate_adder_regs_10__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_23
+generate_adder_regs_11__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_22
+generate_adder_regs_12__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_21
+generate_adder_regs_13__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_20
+generate_adder_regs_14__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_19
+generate_adder_regs_15__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_18
+generate_adder_regs_16__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_17
+generate_adder_regs_17__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_16
+generate_adder_regs_18__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_15
+generate_adder_regs_19__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_14
+generate_adder_regs_1__adder_reg     0.9331      2.5    0.0000     0.9331  0.0000  D_FF_32
+generate_adder_regs_20__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_13
+generate_adder_regs_21__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_12
+generate_adder_regs_22__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_11
+generate_adder_regs_23__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_10
+generate_adder_regs_24__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_9
+generate_adder_regs_25__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_8
+generate_adder_regs_26__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_7
+generate_adder_regs_27__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_6
+generate_adder_regs_28__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_5
+generate_adder_regs_29__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_4
+generate_adder_regs_2__adder_reg     0.9331      2.5    0.0000     0.9331  0.0000  D_FF_31
+generate_adder_regs_30__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_3
+generate_adder_regs_31__adder_reg    0.9331      2.5    0.0000     0.9331  0.0000  D_FF_2
+generate_adder_regs_3__adder_reg     0.9331      2.5    0.0000     0.9331  0.0000  D_FF_30
+generate_adder_regs_4__adder_reg     0.9331      2.5    0.0000     0.9331  0.0000  D_FF_29
+generate_adder_regs_5__adder_reg     0.9331      2.5    0.0000     0.9331  0.0000  D_FF_28
+generate_adder_regs_6__adder_reg     0.9331      2.5    0.0000     0.9331  0.0000  D_FF_27
+generate_adder_regs_7__adder_reg     0.9331      2.5    0.0000     0.9331  0.0000  D_FF_26
+generate_adder_regs_8__adder_reg     0.9331      2.5    0.0000     0.9331  0.0000  D_FF_25
+generate_adder_regs_9__adder_reg     0.9331      2.5    0.0000     0.9331  0.0000  D_FF_24
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                   6.8429    30.7930  0.0000
+
+1
