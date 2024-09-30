@@ -1,0 +1,9 @@
+*.fsdb
+csrc/
+*.conf
+*.log
+*.rc
+nWaveLog/
+simv
+simv.daidir/
+*.key
