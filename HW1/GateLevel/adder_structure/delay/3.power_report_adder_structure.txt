@@ -7,7 +7,7 @@ Report : power
         -analysis_effort low
 Design : adder_structure
 Version: V-2023.12
-Date   : Mon Sep 30 19:02:58 2024
+Date   : Tue Oct  1 20:57:27 2024
 ****************************************
 
 

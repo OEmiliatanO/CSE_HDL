@@ -1,0 +1,43 @@
+ 
+****************************************
+Report : area
+Design : D_FF
+Version: V-2023.12
+Date   : Tue Oct  1 21:07:54 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                            3
+Number of nets:                             4
+Number of cells:                            2
+Number of combinational cells:              1
+Number of sequential cells:                 1
+Number of macros/black boxes:               0
+Number of buf/inv:                          1
+Number of references:                       2
+
+Combinational area:                  0.207360
+Buf/Inv area:                        0.207360
+Noncombinational area:               0.933120
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                     1.140480
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+D_FF                                 1.1405    100.0    0.2074     0.9331  0.0000  D_FF
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                   0.2074     0.9331  0.0000
+
+1

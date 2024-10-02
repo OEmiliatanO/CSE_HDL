@@ -12,33 +12,33 @@ module TB;
     wire [width:0]   testa, testb;
     reg              ci1, ci2, ci3;
     // Outputs of Adder
-    wire [width-1:0] so1, so2, so3;
-    wire             co1, co2, co3;
-    reg  [width+1:0] shifted_co1, shifted_co2, shifted_co3;
+    wire [width-1:0] structure_s, dataflow_s, behavior_s;
+    wire             structure_c, datflow_c, behavior_c;
+    reg  [width+1:0] shifted_structure_c, shifted_datflow_c, shifted_behavior_c;
     // Outputs of Reg of Adder
-    wire [width-1:0] s1, s2, s3;
-    wire             c1, c2, c3;
+    wire [width-1:0] structure_reg_s, dataflow_reg_s, behavior_reg_s;
+    wire             structure_reg_c, dataflow_reg_c, behavior_reg_c;
     integer i;
 
     adder_structure uut1 (
-        .s(so1), .co(co1), .a(a1), .b(b1), .ci(ci1)
+        .s(structure_s), .co(structure_c), .a(a1), .b(b1), .ci(ci1)
     );
     adder_structure_reg reg_uut1 (
-        .si(so1), .ci(co1), .clk(clk), .so(s1), .co(c1)
+        .si(structure_s), .ci(structure_c), .clk(clk), .so(structure_reg_s), .co(structure_reg_c)
     );
 
     adder_dataflow uut2 (
-        .s(so2), .co(co2), .a(a2), .b(b2), .ci(ci2)
+        .s(dataflow_s), .co(datflow_c), .a(a2), .b(b2), .ci(ci2)
     );
     adder_dataflow_reg reg_uut2 (
-        .si(so2), .ci(co2), .clk(clk), .so(s2), .co(c2)
+        .si(dataflow_s), .ci(datflow_c), .clk(clk), .so(dataflow_reg_s), .co(dataflow_reg_c)
     );
 
     adder_behavior uut3 (
-        .s(so3), .co(co3), .a(a3), .b(b3), .ci(ci3)
+        .s(behavior_s), .co(behavior_c), .a(a3), .b(b3), .ci(ci3)
     );
     adder_behavior_reg reg_uut3(
-        .si(so3), .ci(co3), .clk(clk), .so(s3), .co(c3)
+        .si(behavior_s), .ci(behavior_c), .clk(clk), .so(behavior_reg_s), .co(behavior_reg_c)
     );
 
     assign a1 = a; assign a2 = a; assign a3 = a;
@@ -56,9 +56,9 @@ module TB;
             #10 a = {$random}; b = {$random}; 
             #1 clk=~clk; // posedge clk
             #1 clk=~clk; // negedge clk
-            $display("Adder (structure): %d + %d = %d + %d = %d\n", a, b, s1, shifted_co1, s1 + shifted_co1);
-            $display("Adder (dataflow):  %d + %d = %d + %d = %d\n", a, b, s2, shifted_co2, s2 + shifted_co2);
-            $display("Adder (behavior):  %d + %d = %d + %d = %d\n", a, b, s3, shifted_co3, s3 + shifted_co3);
+            $display("Adder (structure): %d + %d = %d + %d = %d\n", a, b, structure_reg_s, shifted_structure_c, structure_reg_s + shifted_structure_c);
+            $display("Adder (dataflow):  %d + %d = %d + %d = %d\n", a, b, dataflow_reg_s, shifted_datflow_c, dataflow_reg_s + shifted_datflow_c);
+            $display("Adder (behavior):  %d + %d = %d + %d = %d\n", a, b, behavior_reg_s, shifted_behavior_c, behavior_reg_s + shifted_behavior_c);
             $display("Expected: %d + %d = %d\n", a, b, testa+testb);
         end
         
@@ -66,9 +66,9 @@ module TB;
     end
 
     always @(*) begin
-        shifted_co1 = {c1, 32'b0}; 
-        shifted_co2 = {c2, 32'b0}; 
-        shifted_co3 = {c3, 32'b0}; 
+        shifted_structure_c = {structure_reg_c, 32'b0}; 
+        shifted_datflow_c = {dataflow_reg_c, 32'b0}; 
+        shifted_behavior_c = {behavior_reg_c, 32'b0}; 
     end    
 
 endmodule

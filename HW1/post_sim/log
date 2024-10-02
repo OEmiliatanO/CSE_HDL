@@ -1,0 +1,129 @@
+
+Warning-[UNKWN_OPTVSIM] Unknown option passed
+  Ignoring unknown option '-no_save' passed to 'vcs' and continuing 
+  compilation.
+
+*** Using c compiler gcc instead of cc ...
+                         Chronologic VCS (TM)
+            Version V-2023.12 -- Tue Oct  1 20:39:28 2024
+
+                    Copyright (c) 1991 - 2023 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+The design hasn't changed and need not be recompiled. 
+If you really want to, delete file simv.daidir/.vcs.timestamp and
+run VCS again.
+
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid re-execution or '-suppress=ASLR_DETECTED_INFO' to suppress this message.
+Chronologic VCS simulator copyright 1991-2023
+Contains Synopsys proprietary information.
+Compiler version V-2023.12; Runtime version V-2023.12;  Oct  1 20:39 2024
+*Verdi* Loading libsscore_vcs202312.so
+FSDB Dumper for VCS, Release Verdi_V-2023.12, Linux, 11/15/2023
+(C) 1996 - 2023 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file '6adder.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +mda dumping.
+*Verdi* : End of traversing.
+Adder (structure):  303379748 + 3230228097 = 3533607845 +           0 =  3533607845
+
+Adder (dataflow):   303379748 + 3230228097 = 3533607845 +           0 =  3533607845
+
+Adder (behavior):   303379748 + 3230228097 = 3533607845 +           0 =  3533607845
+
+Expected:  303379748 + 3230228097 = 3533607845
+
+Adder (structure): 2223298057 + 2985317987 =  913648748 +  4294967296 =  5208616044
+
+Adder (dataflow):  2223298057 + 2985317987 =  913648748 +  4294967296 =  5208616044
+
+Adder (behavior):  2223298057 + 2985317987 =  913648748 +  4294967296 =  5208616044
+
+Expected: 2223298057 + 2985317987 = 5208616044
+
+Adder (structure):  112818957 + 1189058957 = 1301877914 +           0 =  1301877914
+
+Adder (dataflow):   112818957 + 1189058957 = 1301877914 +           0 =  1301877914
+
+Adder (behavior):   112818957 + 1189058957 = 1301877914 +           0 =  1301877914
+
+Expected:  112818957 + 1189058957 = 1301877914
+
+Adder (structure): 2999092325 + 2302104082 = 1006229111 +  4294967296 =  5301196407
+
+Adder (dataflow):  2999092325 + 2302104082 = 1006229111 +  4294967296 =  5301196407
+
+Adder (behavior):  2999092325 + 2302104082 = 1006229111 +  4294967296 =  5301196407
+
+Expected: 2999092325 + 2302104082 = 5301196407
+
+Adder (structure):   15983361 +  114806029 =  130789390 +           0 =   130789390
+
+Adder (dataflow):    15983361 +  114806029 =  130789390 +           0 =   130789390
+
+Adder (behavior):    15983361 +  114806029 =  130789390 +           0 =   130789390
+
+Expected:   15983361 +  114806029 =  130789390
+
+Adder (structure):  992211318 +  512609597 = 1504820915 +           0 =  1504820915
+
+Adder (dataflow):   992211318 +  512609597 = 1504820915 +           0 =  1504820915
+
+Adder (behavior):   992211318 +  512609597 = 1504820915 +           0 =  1504820915
+
+Expected:  992211318 +  512609597 = 1504820915
+
+Adder (structure): 1993627629 + 1177417612 = 3171045241 +           0 =  3171045241
+
+Adder (dataflow):  1993627629 + 1177417612 = 3171045241 +           0 =  3171045241
+
+Adder (behavior):  1993627629 + 1177417612 = 3171045241 +           0 =  3171045241
+
+Expected: 1993627629 + 1177417612 = 3171045241
+
+Adder (structure): 2097015289 + 3812041926 = 1614089919 +  4294967296 =  5909057215
+
+Adder (dataflow):  2097015289 + 3812041926 = 1614089919 +  4294967296 =  5909057215
+
+Adder (behavior):  2097015289 + 3812041926 = 1614089919 +  4294967296 =  5909057215
+
+Expected: 2097015289 + 3812041926 = 5909057215
+
+Adder (structure): 3807872197 + 3574846122 = 3087751023 +  4294967296 =  7382718319
+
+Adder (dataflow):  3807872197 + 3574846122 = 3087751023 +  4294967296 =  7382718319
+
+Adder (behavior):  3807872197 + 3574846122 = 3087751023 +  4294967296 =  7382718319
+
+Expected: 3807872197 + 3574846122 = 7382718319
+
+Adder (structure): 1924134885 + 3151131255 =  780298844 +  4294967296 =  5075266140
+
+Adder (dataflow):  1924134885 + 3151131255 =  780298844 +  4294967296 =  5075266140
+
+Adder (behavior):  1924134885 + 3151131255 =  780298844 +  4294967296 =  5075266140
+
+Expected: 1924134885 + 3151131255 = 5075266140
+
+$finish called from file "/home/B103040012_HDL/HDL/HW1/post_sim/TB.v", line 74.
+$finish at simulation time                42000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 42000 ps
+CPU Time:      0.770 seconds;       Data structure size:   0.3Mb
+Tue Oct  1 20:39:29 2024
+CPU time: .830 seconds in simulation
