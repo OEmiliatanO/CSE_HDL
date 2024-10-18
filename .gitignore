@@ -12,3 +12,4 @@ simv.daidir/
 *.syn
 cksum_dir/
 *.svf
+pt_shell_command.log

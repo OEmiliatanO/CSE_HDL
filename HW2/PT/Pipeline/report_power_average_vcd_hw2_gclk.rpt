@@ -1,0 +1,23 @@
+****************************************
+Report : Averaged Power
+	-hierarchy
+Design : hw2_pipe
+Version: V-2023.12
+Date   : Fri Oct 18 13:49:32 2024
+****************************************
+
+
+
+                                      Int      Switch   Leak     Total
+Hierarchy                             Power    Power    Power    Power    %
+----------------------------------------------------------------------------------
+hw2_pipe                              3.18e-05 1.53e-05 2.61e-07 4.73e-05 100.0
+  stage1_reg1 (d_ff_0)                4.42e-06 6.73e-07 1.32e-08 5.11e-06  10.8
+  stage1_reg2 (d_ff_1)                3.59e-06 5.08e-07 1.22e-08 4.11e-06   8.7
+  uut1 (stage1_pipe)                  2.55e-06 1.24e-06 1.34e-08 3.80e-06   8.0
+    sub_22 (stage1_pipe_DW01_sub_0)   1.01e-06 5.77e-07 5.44e-09 1.59e-06   3.4
+    add_22 (stage1_pipe_DW01_add_0)   9.00e-07 3.28e-07 4.56e-09 1.23e-06   2.6
+  uut2 (stage2_pipe)                  1.66e-05 1.28e-05 2.10e-07 2.96e-05  62.6
+    mult_30 (stage2_pipe_DW_mult_uns_2)
+                                      1.66e-05 1.28e-05 2.10e-07 2.96e-05  62.6
+1
