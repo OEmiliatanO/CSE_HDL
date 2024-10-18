@@ -1,0 +1,52 @@
+ 
+****************************************
+Report : area
+Design : hw2_cg
+Version: V-2023.12
+Date   : Fri Oct 18 15:14:26 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                          328
+Number of nets:                           965
+Number of cells:                          622
+Number of combinational cells:            548
+Number of sequential cells:                65
+Number of macros/black boxes:               0
+Number of buf/inv:                         79
+Number of references:                      15
+
+Combinational area:                234.835205
+Buf/Inv area:                       19.232640
+Noncombinational area:              74.131203
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   308.966407
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------------
+hw2_cg                             308.9664    100.0    8.7610    18.2477  0.0000  hw2_cg
+cg0                                 19.3363      6.3    0.7776    18.5587  0.0000  clock_gate16_2
+cg1                                 18.4032      6.0    0.1555    18.2477  0.0000  clock_gate16_1
+cg2                                 18.4032      6.0    0.1555    18.2477  0.0000  clock_gate16_0
+clk_gate_C68                         0.8294      0.3    0.0000     0.8294  0.0000  SNPS_CLOCK_GATE_HIGH_hw2_cg
+uut1                                22.1875      7.2    4.7174     0.0000  0.0000  stage1_cg
+uut1/add_30                          8.0352      2.6    8.0352     0.0000  0.0000  stage1_cg_DW01_add_0
+uut1/sub_30                          9.4349      3.1    9.4349     0.0000  0.0000  stage1_cg_DW01_sub_0
+uut2                               202.7981     65.6    0.0000     0.0000  0.0000  stage2_cg
+uut2/mult_37                       202.7981     65.6  202.7981     0.0000  0.0000  stage2_cg_DW_mult_uns_2
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------------------
+Total                                                 234.8352    74.1312  0.0000
+
+1

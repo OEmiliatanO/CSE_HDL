@@ -1,0 +1,65 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : hw2_pipe
+Version: V-2023.12
+Date   : Fri Oct 18 15:16:49 2024
+****************************************
+
+Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: stage1_reg1/Q_reg_11_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: d_reg_14_ (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  hw2_pipe           ZeroWireload          N16ADFP_StdCellss0p72vm40c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  stage1_reg1/Q_reg_11_/CP (DFCNQD2BWP16P90LVT)           0.00       0.00 r
+  stage1_reg1/Q_reg_11_/Q (DFCNQD2BWP16P90LVT)            0.04       0.04 f
+  stage1_reg1/Q[11] (d_ff_0)                              0.00       0.04 f
+  uut2/sum[11] (stage2_pipe) <-                           0.00       0.04 f
+  uut2/mult_30/a[11] (stage2_pipe_DW_mult_uns_2)          0.00       0.04 f
+  uut2/mult_30/U400/Z (CKBD8BWP16P90LVT)                  0.01       0.06 f
+  uut2/mult_30/U604/Z (XOR2D4BWP16P90LVT)                 0.02       0.08 r
+  uut2/mult_30/U422/ZN (ND2D1BWP16P90LVT)                 0.01       0.09 f
+  uut2/mult_30/U407/ZN (OAI22D2BWP16P90LVT)               0.01       0.10 r
+  uut2/mult_30/U683/CO (FA1D2BWP16P90LVT)                 0.03       0.13 r
+  uut2/mult_30/U823/CO (FA1D2BWP16P90LVT)                 0.03       0.15 r
+  uut2/mult_30/U151/S (FA1D1BWP16P90LVT)                  0.04       0.19 f
+  uut2/mult_30/U150/S (FA1D1BWP16P90LVT)                  0.04       0.23 r
+  uut2/mult_30/U566/ZN (NR2D2BWP16P90LVT)                 0.01       0.24 f
+  uut2/mult_30/U474/ZN (CKND1BWP16P90LVT)                 0.01       0.25 r
+  uut2/mult_30/U40/ZN (ND2D1BWP16P90LVT)                  0.01       0.25 f
+  uut2/mult_30/U754/Z (XOR2D1BWP16P90LVT)                 0.02       0.28 r
+  uut2/mult_30/product[14] (stage2_pipe_DW_mult_uns_2)
+                                                          0.00       0.28 r
+  uut2/r[14] (stage2_pipe) <-                             0.00       0.28 r
+  d_reg_14_/D (DFCNQD2BWP16P90LVT)                        0.00       0.28 r
+  data arrival time                                                  0.28
+
+  clock clk (rise edge)                                   0.29       0.29
+  clock network delay (ideal)                             0.00       0.29
+  d_reg_14_/CP (DFCNQD2BWP16P90LVT)                       0.00       0.29 r
+  library setup time                                     -0.01       0.28
+  data required time                                                 0.28
+  --------------------------------------------------------------------------
+  data required time                                                 0.28
+  data arrival time                                                 -0.28
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
