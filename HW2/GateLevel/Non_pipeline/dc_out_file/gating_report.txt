@@ -3,7 +3,7 @@
 Report : clock_gating
 Design : hw2_nonpipe
 Version: V-2023.12
-Date   : Thu Oct 17 21:35:30 2024
+Date   : Sat Oct 19 23:09:57 2024
 ****************************************
 
 Information: Identification of clock-gating cells has not been performed. Pre-existing clock-gating cells will not be reported. (PWR-947)

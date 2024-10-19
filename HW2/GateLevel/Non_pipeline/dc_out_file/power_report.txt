@@ -7,7 +7,7 @@ Report : power
         -analysis_effort low
 Design : hw2_nonpipe
 Version: V-2023.12
-Date   : Thu Oct 17 21:35:30 2024
+Date   : Sat Oct 19 23:09:56 2024
 ****************************************
 
 
@@ -38,12 +38,12 @@ Attributes
 i - Including register clock pin internal power
 
 
-  Cell Internal Power  =   1.0662 mW   (58%)
-  Net Switching Power  = 780.8401 uW   (42%)
+  Cell Internal Power  = 833.4792 uW   (55%)
+  Net Switching Power  = 672.8365 uW   (45%)
                          ---------
-Total Dynamic Power    =   1.8471 mW  (100%)
+Total Dynamic Power    =   1.5063 mW  (100%)
 
-Cell Leakage Power     = 494.0578 nW
+Cell Leakage Power     = 352.7029 nW
 
 Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
 
@@ -56,7 +56,7 @@ black_box          0.0000            0.0000            0.0000            0.0000 
 clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)  i
 register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
 sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
-combinational      1.0663            0.7808          494.0559            1.8476  ( 100.00%)
+combinational      0.8335            0.6728          352.7009            1.5067  ( 100.00%)
 --------------------------------------------------------------------------------------------------
-Total              1.0663 mW         0.7808 mW       494.0559 nW         1.8476 mW
+Total              0.8335 mW         0.6728 mW       352.7009 nW         1.5067 mW
 1

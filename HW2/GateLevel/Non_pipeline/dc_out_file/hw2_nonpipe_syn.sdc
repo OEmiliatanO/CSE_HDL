@@ -1,6 +1,6 @@
 ###################################################################
 
-# Created by write_sdc on Thu Oct 17 21:35:31 2024
+# Created by write_sdc on Sat Oct 19 23:09:57 2024
 
 ###################################################################
 set sdc_version 2.1
@@ -12,8 +12,8 @@ N16ADFP_StdCellss0p72vm40c_ccs\
 N16ADFP_StdCellff0p88v125c_ccs
 set_wire_load_mode top
 set_wire_load_model -name ZeroWireload -library N16ADFP_StdCellss0p72vm40c_ccs
-create_clock -name clk  -period 0.25  -waveform {0 0.125}
-set_max_delay 0.25  -from [list [get_ports {a[7]}] [get_ports {a[6]}] [get_ports {a[5]}]          \
+create_clock -name clk  -period 0.26  -waveform {0 0.13}
+set_max_delay 0.26  -from [list [get_ports {a[7]}] [get_ports {a[6]}] [get_ports {a[5]}]          \
 [get_ports {a[4]}] [get_ports {a[3]}] [get_ports {a[2]}] [get_ports {a[1]}]    \
 [get_ports {a[0]}] [get_ports {b[7]}] [get_ports {b[6]}] [get_ports {b[5]}]    \
 [get_ports {b[4]}] [get_ports {b[3]}] [get_ports {b[2]}] [get_ports {b[1]}]    \

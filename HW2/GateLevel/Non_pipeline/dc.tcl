@@ -28,7 +28,7 @@ set Dump_file_name "hw2_nonpipe_syn"
 set Top				"hw2_nonpipe"
 #Specify Clock，clock名需和top module中clk port相同
 set Clk_pin			"clk"
-set Clk_period		"0.25"
+set Clk_period		"0.26"
 
 #Read Design
 #如果設計有parameter設計，read_file指定不能用，需使用analyze + elaborate指令並自行更改路徑
