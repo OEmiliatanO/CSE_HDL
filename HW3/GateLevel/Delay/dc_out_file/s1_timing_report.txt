@@ -1,0 +1,63 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : thumb
+Version: V-2023.12
+Date   : Sun Nov 10 07:21:01 2024
+****************************************
+
+Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: step1/IF_IR_reg_9_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: step2/ID_Rd_reg_8_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  thumb              ZeroWireload          N16ADFP_StdCellss0p72vm40c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  step1/IF_IR_reg_9_/CP (DFCNQD2BWP16P90LVT)              0.00       0.00 r
+  step1/IF_IR_reg_9_/Q (DFCNQD2BWP16P90LVT)               0.05       0.05 f
+  step1/IF_IR[9] (IF) <-                                  0.00       0.05 f
+  step2/IF_IR[9] (ID)                                     0.00       0.05 f
+  step2/U598/ZN (CKND1BWP16P90LVT)                        0.03       0.08 r
+  step2/U275/ZN (NR2D1BWP16P90LVT)                        0.02       0.10 f
+  step2/U276/ZN (INR2D1BWP16P90LVT)                       0.02       0.11 f
+  step2/U270/ZN (NR4D1BWP16P90LVT)                        0.02       0.13 r
+  step2/U269/ZN (INR4D1BWP16P90LVT)                       0.03       0.16 r
+  step2/U101/Z (BUFFD1BWP16P90LVT)                        0.03       0.19 r
+  step2/U100/ZN (INR2D1BWP16P90LVT)                       0.02       0.21 r
+  step2/U71/Z (BUFFD1BWP16P90LVT)                         0.03       0.24 r
+  step2/U91/Z (AO21D1BWP16P90LVT)                         0.02       0.26 r
+  step2/U1570/ZN (ND4D1BWP16P90LVT)                       0.02       0.28 f
+  step2/U286/ZN (CKND1BWP16P90LVT)                        0.02       0.30 r
+  step2/U108/Z (BUFFD1BWP16P90LVT)                        0.05       0.35 r
+  step2/U4/Z (MUX2D2BWP20P90)                             0.05       0.39 r
+  step2/ID_Rd_reg_8_/D (DFCNQD2BWP16P90LVT)               0.00       0.39 r
+  data arrival time                                                  0.39
+
+  clock clk (rise edge)                                   0.45       0.45
+  clock network delay (ideal)                             0.00       0.45
+  step2/ID_Rd_reg_8_/CP (DFCNQD2BWP16P90LVT)              0.00       0.45 r
+  library setup time                                     -0.01       0.44
+  data required time                                                 0.44
+  --------------------------------------------------------------------------
+  data required time                                                 0.44
+  data arrival time                                                 -0.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.04
+
+
+1
