@@ -1,0 +1,44 @@
+ 
+****************************************
+Report : area
+Design : LineBuffer
+Version: V-2023.12
+Date   : Tue Nov 19 03:04:37 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                          267
+Number of nets:                         45569
+Number of cells:                        45458
+Number of combinational cells:          25904
+Number of sequential cells:             19553
+Number of macros/black boxes:               0
+Number of buf/inv:                       6474
+Number of references:                      17
+
+Combinational area:              10072.564005
+Buf/Inv area:                     1006.992045
+Noncombinational area:           18289.255926
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 28361.819931
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ---------------------
+LineBuffer                        28361.8199    100.0  10045.8664  18289.2559  0.0000  LineBuffer
+add_46                               26.6976      0.1     26.6976      0.0000  0.0000  LineBuffer_DW01_inc_0
+--------------------------------  ----------  -------  ----------  ----------  ------  ---------------------
+Total                                                  10072.5640  18289.2559  0.0000
+
+1

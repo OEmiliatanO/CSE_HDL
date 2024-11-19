@@ -1,0 +1,55 @@
+ 
+****************************************
+Report : area
+Design : Conv
+Version: V-2023.12
+Date   : Tue Nov 19 00:10:38 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                          936
+Number of nets:                          1609
+Number of cells:                          506
+Number of combinational cells:            494
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        163
+Number of references:                      35
+
+Combinational area:                293.932808
+Buf/Inv area:                       25.349761
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                   293.932808
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------
+Conv                               293.9328    100.0   30.1709     0.0000  0.0000  Conv
+add_13                              20.4250      6.9   20.4250     0.0000  0.0000  Conv_DW01_add_5
+add_13_2                            20.4250      6.9   20.4250     0.0000  0.0000  Conv_DW01_add_4
+add_13_3                            20.4250      6.9   20.4250     0.0000  0.0000  Conv_DW01_add_3
+add_7                               20.4250      6.9   20.4250     0.0000  0.0000  Conv_DW01_add_2
+add_7_2                             20.4250      6.9   20.4250     0.0000  0.0000  Conv_DW01_add_1
+add_7_3                             20.4250      6.9   20.4250     0.0000  0.0000  Conv_DW01_add_0
+sub_13                              23.5354      8.0   23.5354     0.0000  0.0000  Conv_DW01_sub_5
+sub_13_2                            23.5354      8.0   23.5354     0.0000  0.0000  Conv_DW01_sub_0
+sub_13_4                            23.5354      8.0   23.5354     0.0000  0.0000  Conv_DW01_sub_4
+sub_7                               23.5354      8.0   23.5354     0.0000  0.0000  Conv_DW01_sub_3
+sub_7_2                             23.5354      8.0   23.5354     0.0000  0.0000  Conv_DW01_sub_1
+sub_7_4                             23.5354      8.0   23.5354     0.0000  0.0000  Conv_DW01_sub_2
+--------------------------------  ---------  -------  --------  ---------  ------  ---------------
+Total                                                 293.9328     0.0000  0.0000
+
+1

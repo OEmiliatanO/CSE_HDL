@@ -1,0 +1,76 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Conv
+Version: V-2023.12
+Date   : Tue Nov 19 00:10:38 2024
+****************************************
+
+Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: R3[0] (input port clocked by clk)
+  Endpoint: x[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Conv               ZeroWireload          N16ADFP_StdCellss0p72vm40c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  R3[0] (in)                               0.00       0.00 r
+  sub_7_2/B[0] (Conv_DW01_sub_1)           0.00       0.00 r
+  sub_7_2/U3/ZN (CKND1BWP16P90LVT)         0.01       0.01 f
+  sub_7_2/U1/Z (OR2D1BWP16P90LVT)          0.02       0.02 f
+  sub_7_2/U2_1/CO (FA1D1BWP16P90LVT)       0.03       0.05 f
+  sub_7_2/U2_2/CO (FA1D1BWP16P90LVT)       0.03       0.08 f
+  sub_7_2/U2_3/CO (FA1D1BWP16P90LVT)       0.03       0.10 f
+  sub_7_2/U2_4/CO (FA1D1BWP16P90LVT)       0.03       0.13 f
+  sub_7_2/U2_5/CO (FA1D1BWP16P90LVT)       0.03       0.16 f
+  sub_7_2/U2_6/CO (FA1D1BWP16P90LVT)       0.03       0.19 f
+  sub_7_2/U2_7/CO (FA1D1BWP16P90LVT)       0.03       0.21 f
+  sub_7_2/U2_8/CO (FA1D1BWP16P90LVT)       0.03       0.24 f
+  sub_7_2/U2_9/CO (FA1D1BWP16P90LVT)       0.03       0.27 f
+  sub_7_2/U2_10/CO (FA1D1BWP16P90LVT)      0.03       0.30 f
+  sub_7_2/U2_11/CO (FA1D1BWP16P90LVT)      0.03       0.33 f
+  sub_7_2/U2_12/CO (FA1D1BWP16P90LVT)      0.03       0.35 f
+  sub_7_2/U2_13/CO (FA1D1BWP16P90LVT)      0.03       0.38 f
+  sub_7_2/U2_14/CO (FA1D1BWP16P90LVT)      0.03       0.41 f
+  sub_7_2/U2_15/CO (FA1D1BWP16P90LVT)      0.03       0.44 f
+  sub_7_2/U2_16/CO (FA1D1BWP16P90LVT)      0.03       0.46 f
+  sub_7_2/U2_17/CO (FA1D1BWP16P90LVT)      0.03       0.49 f
+  sub_7_2/U2_18/S (FA1D1BWP16P90LVT)       0.05       0.54 r
+  sub_7_2/DIFF[18] (Conv_DW01_sub_1)       0.00       0.54 r
+  add_7/B[18] (Conv_DW01_add_2)            0.00       0.54 r
+  add_7/U1_18/S (FA1D1BWP16P90LVT)         0.04       0.58 f
+  add_7/SUM[18] (Conv_DW01_add_2)          0.00       0.58 f
+  add_7_3/A[18] (Conv_DW01_add_0)          0.00       0.58 f
+  add_7_3/U1_18/S (FA1D1BWP16P90LVT)       0.04       0.62 r
+  add_7_3/SUM[18] (Conv_DW01_add_0)        0.00       0.62 r
+  U14/ZN (CKND1BWP16P90LVT)                0.01       0.63 f
+  U65/ZN (ND2D1BWP16P90)                   0.01       0.64 r
+  U38/ZN (CKND1BWP16P90LVT)                0.01       0.64 f
+  U98/ZN (OAI32D1BWP16P90)                 0.02       0.66 r
+  U99/ZN (AOI21D1BWP16P90)                 0.01       0.68 f
+  U62/ZN (OAI32D1BWP16P90LVT)              0.01       0.68 r
+  x[0] (out)                               0.00       0.68 r
+  data arrival time                                   0.68
+
+  max_delay                                0.69       0.69
+  output external delay                    0.00       0.69
+  data required time                                  0.69
+  -----------------------------------------------------------
+  data required time                                  0.69
+  data arrival time                                  -0.68
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1

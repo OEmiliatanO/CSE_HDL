@@ -1,0 +1,85 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -sort_by group
+Design : Edge_Detection
+Version: V-2023.12
+Date   : Wed Nov 20 01:41:35 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: step1/R3_reg_0_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_x[7] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  Edge_Detection     ZeroWireload          N16ADFP_StdCellss0p72vm40c_ccs
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  step1/R3_reg_0_/CP (DFCNQD2BWP16P90LVT)                 0.00 #     0.00 r
+  step1/R3_reg_0_/Q (DFCNQD2BWP16P90LVT)                  0.03       0.03 r
+  step1/R3[0] (LineBuffer)                                0.00       0.03 r
+  step2/R3[0] (Conv) <-                                   0.00       0.03 r
+  step2/sub_7_2/B[0] (Conv_DW01_sub_1)                    0.00       0.03 r
+  step2/sub_7_2/U2/ZN (CKND1BWP16P90LVT)                  0.01       0.04 f
+  step2/sub_7_2/U1/Z (OR2D1BWP16P90LVT)                   0.02       0.06 f
+  step2/sub_7_2/U2_1/CO (FA1D1BWP16P90LVT)                0.03       0.08 f
+  step2/sub_7_2/U2_2/CO (FA1D1BWP16P90LVT)                0.03       0.11 f
+  step2/sub_7_2/U2_3/CO (FA1D1BWP16P90LVT)                0.03       0.14 f
+  step2/sub_7_2/U2_4/CO (FA1D1BWP16P90LVT)                0.03       0.17 f
+  step2/sub_7_2/U2_5/CO (FA1D1BWP16P90LVT)                0.03       0.20 f
+  step2/sub_7_2/U2_6/CO (FA1D1BWP16P90LVT)                0.03       0.22 f
+  step2/sub_7_2/U2_7/CO (FA1D1BWP16P90LVT)                0.03       0.25 f
+  step2/sub_7_2/U2_8/CO (FA1D1BWP16P90LVT)                0.03       0.28 f
+  step2/sub_7_2/U2_9/CO (FA1D1BWP16P90LVT)                0.03       0.31 f
+  step2/sub_7_2/U2_10/CO (FA1D1BWP16P90LVT)               0.03       0.33 f
+  step2/sub_7_2/U2_11/CO (FA1D1BWP16P90LVT)               0.03       0.36 f
+  step2/sub_7_2/U2_12/CO (FA1D1BWP16P90LVT)               0.03       0.39 f
+  step2/sub_7_2/U2_13/CO (FA1D1BWP16P90LVT)               0.03       0.42 f
+  step2/sub_7_2/U2_14/CO (FA1D1BWP16P90LVT)               0.03       0.44 f
+  step2/sub_7_2/U2_15/CO (FA1D1BWP16P90LVT)               0.03       0.47 f
+  step2/sub_7_2/U2_16/CO (FA1D1BWP16P90LVT)               0.03       0.50 f
+  step2/sub_7_2/U2_17/CO (FA1D1BWP16P90LVT)               0.03       0.53 f
+  step2/sub_7_2/U2_18/S (FA1D1BWP16P90LVT)                0.05       0.57 r
+  step2/sub_7_2/DIFF[18] (Conv_DW01_sub_1)                0.00       0.57 r
+  step2/add_7/B[18] (Conv_DW01_add_2_DW01_add_6)          0.00       0.57 r
+  step2/add_7/U1_18/S (FA1D1BWP16P90LVT)                  0.04       0.62 f
+  step2/add_7/SUM[18] (Conv_DW01_add_2_DW01_add_6)        0.00       0.62 f
+  step2/add_7_3/A[18] (Conv_DW01_add_0_DW01_add_4)        0.00       0.62 f
+  step2/add_7_3/U1_18/S (FA1D1BWP16P90LVT)                0.04       0.66 r
+  step2/add_7_3/SUM[18] (Conv_DW01_add_0_DW01_add_4)      0.00       0.66 r
+  step2/U2/ZN (CKND1BWP16P90LVT)                          0.01       0.66 f
+  step2/U44/ZN (ND2D1BWP16P90LVT)                         0.01       0.67 r
+  step2/U46/ZN (CKND1BWP16P90LVT)                         0.01       0.68 f
+  step2/U87/ZN (OAI32D1BWP16P90)                          0.02       0.70 r
+  step2/U88/ZN (AOI21D1BWP16P90)                          0.01       0.71 f
+  step2/U53/ZN (OAI32D1BWP16P90LVT)                       0.01       0.72 r
+  step2/x[7] (Conv) <-                                    0.00       0.72 r
+  out_x[7] (out)                                          0.00       0.72 r
+  data arrival time                                                  0.72
+
+  clock clk (rise edge)                                   0.73       0.73
+  clock network delay (ideal)                             0.00       0.73
+  output external delay                                   0.00       0.73
+  data required time                                                 0.73
+  --------------------------------------------------------------------------
+  data required time                                                 0.73
+  data arrival time                                                 -0.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1
