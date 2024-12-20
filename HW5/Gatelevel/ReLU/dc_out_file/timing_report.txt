@@ -1,0 +1,43 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ReLU
+Version: T-2022.03
+Date   : Thu Dec 19 01:25:39 2024
+****************************************
+
+Operating Conditions: ss0p72vm40c   Library: N16ADFP_StdCellss0p72vm40c_ccs
+Wire Load Model Mode: top
+
+  Startpoint: x[0] (input port clocked by clk)
+  Endpoint: y[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ReLU               ZeroWireload          N16ADFP_StdCellss0p72vm40c_ccs
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                     0.00       0.00 r
+  x[0] (in)                                0.00       0.00 r
+  U44/ZN (INR2D1BWP16P90LVT)               0.01       0.01 r
+  y[0] (out)                               0.00       0.01 r
+  data arrival time                                   0.01
+
+  max_delay                                0.30       0.30
+  output external delay                    0.00       0.30
+  data required time                                  0.30
+  -----------------------------------------------------------
+  data required time                                  0.30
+  data arrival time                                  -0.01
+  -----------------------------------------------------------
+  slack (MET)                                         0.29
+
+
+1

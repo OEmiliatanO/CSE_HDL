@@ -1,0 +1,64 @@
+ 
+****************************************
+Report : area
+Design : Conv2d
+Version: T-2022.03
+Date   : Sat Dec 21 00:45:44 2024
+****************************************
+
+Library(s) Used:
+
+    N16ADFP_StdCellss0p72vm40c_ccs (File: /cad/CBDK/ADFP/Executable_Package/Collaterals/IP/stdcell/N16ADFP_StdCell/CCS/N16ADFP_StdCellss0p72vm40c_ccs.db)
+
+Number of ports:                         1807
+Number of nets:                         13284
+Number of cells:                        11118
+Number of combinational cells:           6888
+Number of sequential cells:              4209
+Number of macros/black boxes:               0
+Number of buf/inv:                       1588
+Number of references:                       2
+
+Combinational area:               2552.860854
+Buf/Inv area:                      327.421446
+Noncombinational area:            4798.414254
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  7351.275108
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------------------
+Conv2d                            7351.2751    100.0     0.0000     0.0000  0.0000  Conv2d
+step0                             4944.2920     67.3   116.3808  4798.4143  0.0000  LineBuffer
+step0/add_50                        29.4970      0.4    29.4970     0.0000  0.0000  LineBuffer_DW01_inc_1
+step1                             2406.9831     32.7     0.4666     0.0000  0.0000  Conv
+step1/add_0_root_add_0_root_add_28_9   61.4304     0.8   61.4304    0.0000  0.0000  Conv_DW01_add_20
+step1/add_1_root_add_0_root_add_28_9   56.2464     0.8   56.2464    0.0000  0.0000  Conv_DW01_add_33
+step1/add_2_root_add_0_root_add_28_9   57.7498     0.8   57.7498    0.0000  0.0000  Conv_DW01_add_30
+step1/add_3_root_add_0_root_add_28_9   55.7280     0.8   55.7280    0.0000  0.0000  Conv_DW01_add_21
+step1/add_4_root_add_0_root_add_28_9   54.4838     0.7   54.4838    0.0000  0.0000  Conv_DW01_add_24
+step1/add_5_root_add_0_root_add_28_9   47.9520     0.7   47.9520    0.0000  0.0000  Conv_DW01_add_38
+step1/add_6_root_add_0_root_add_28_9   56.7130     0.8   56.7130    0.0000  0.0000  Conv_DW01_add_46
+step1/add_7_root_add_0_root_add_28_9   56.9722     0.8   56.9722    0.0000  0.0000  Conv_DW01_add_43
+step1/add_8_root_add_0_root_add_28_9   55.7280     0.8   55.7280    0.0000  0.0000  Conv_DW01_add_39
+step1/mult_28                      224.9338      3.1   224.9338     0.0000  0.0000  Conv_DW_mult_uns_30
+step1/mult_28_2                    224.3117      3.1   224.3117     0.0000  0.0000  Conv_DW_mult_uns_31
+step1/mult_28_3                    183.9283      2.5   183.9283     0.0000  0.0000  Conv_DW_mult_uns_34
+step1/mult_28_4                    222.7046      3.0   222.7046     0.0000  0.0000  Conv_DW_mult_uns_28
+step1/mult_28_5                    181.9066      2.5   181.9066     0.0000  0.0000  Conv_DW_mult_uns_33
+step1/mult_28_6                    225.2966      3.1   225.2966     0.0000  0.0000  Conv_DW_mult_uns_27
+step1/mult_28_7                    181.9584      2.5   181.9584     0.0000  0.0000  Conv_DW_mult_uns_35
+step1/mult_28_8                    233.4355      3.2   233.4355     0.0000  0.0000  Conv_DW_mult_uns_29
+step1/mult_28_9                    225.0374      3.1   225.0374     0.0000  0.0000  Conv_DW_mult_uns_32
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------------------
+Total                                                 2552.8609  4798.4143  0.0000
+
+1
